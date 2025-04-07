@@ -5,33 +5,7 @@ setup = function() {
    background(#578FCA);
   
    textSize(10);
-   
-   draw = function(){
-   
-   image(umbrellaImage, 397, 350, 40, 40);
-   
-   //cloud 1
-   drawCloud(160,100);
-   drawCloud(200,120);
-  drawCloud(120,140);
-  drawCloud(140,160);
-   drawCloud(190,150);
-   
-   //cloud 2
-   drawCloud(500,50);
-  drawCloud(450,70);
-   drawCloud(530,70);
-   drawCloud(470,100);
-drawCloud(510,110);
-
-textSize(10);
-
-for(var i = 0; i < drawWater.length; i++){
-text(drawWater[i],200, 230 + i*40);
-}
-   
-
-   }
+  
 
    fill(#B3D8A8);
    rect(-10, 350, 610, 100);
@@ -64,6 +38,8 @@ text(drawPeople[4], 260, 430);
 text(drawPeople[1], 490, 370);
 
 
+}
+
 var drawCloud = function(cloudX, cloudY){
 fill(#FDFAF6)
 noStroke()
@@ -80,7 +56,33 @@ favWeather.push(userWeather);
 }
 }
 
+ draw = function(){
+   
+   image(umbrellaImage, 397, 350, 40, 40);
+   
+   //cloud 1
+   drawCloud(160,100);
+   drawCloud(200,120);
+  drawCloud(120,140);
+  drawCloud(140,160);
+   drawCloud(190,150);
+   
+   //cloud 2
+   drawCloud(500,50);
+  drawCloud(450,70);
+   drawCloud(530,70);
+   drawCloud(470,100);
+drawCloud(510,110);
+
+textSize(10);
+
+for(var i = 0; i < drawWater.length; i++){
+text(drawWater[i],200, 230 + i*40);
 }
+   
+
+   }
+
 
 
 
